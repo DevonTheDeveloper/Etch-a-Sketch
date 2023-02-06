@@ -1,0 +1,17 @@
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.grid-square {
+
+    border: 1px solid black;
+    margin: 1px;
+    width: 5vw;
+    height: 5vh;
+}
+
+.grid-square:hover {
+    background: #457638;
+}

@@ -1,15 +1,19 @@
 #grid-container {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    max-width: 960px;
+    max-height: 960px;
+    border: 2px solid black;
+    overflow: hidden;
 }
 
 
 .grid-square {
-
     border: 1px solid black;
-    margin: 1px;
-    width: 5vw;
-    height: 5vh;
+    margin: 0px;
+    height: 25px;
+    width: 25px;
 }
 
 .grid-square:hover {

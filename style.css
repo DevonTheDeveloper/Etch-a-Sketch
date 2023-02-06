@@ -3,17 +3,14 @@
     flex-wrap: wrap;
     margin: auto;
     max-width: 960px;
-    max-height: 960px;
+    max-height: auto;
     border: 2px solid black;
-    overflow: hidden;
 }
 
 
 .grid-square {
-    border: 1px solid black;
+    outline: 1px solid black;
     margin: 0px;
-    height: 25px;
-    width: 25px;
 }
 
 .grid-square:hover {

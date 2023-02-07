@@ -2,6 +2,7 @@ const documentContainer = document.querySelector("#document-container");
 const grid = document.createElement("div");
 grid.setAttribute("id", "grid-container");
 const gridSquare = document.createElement("div");
+const buttons = document.querySelector('#buttons')
 const createGrid16 = document.createElement("button");
 const createGrid32 = document.createElement("button");
 const createGrid64 = document.createElement("button");
@@ -16,10 +17,10 @@ createGrid64.classList.add("grid-64x64");
 gridOutlineToggle.innerText = "No grid outline";
 gridOutlineToggle.classList.add("grid-outline-toggle");
 
-documentContainer.appendChild(createGrid16);
-documentContainer.appendChild(createGrid32);
-documentContainer.appendChild(createGrid64);
-documentContainer.appendChild(gridOutlineToggle);
+buttons.appendChild(createGrid16);
+buttons.appendChild(createGrid32);
+buttons.appendChild(createGrid64);
+buttons.appendChild(gridOutlineToggle);
 documentContainer.appendChild(grid);
 
 function generateStandardGrid() {

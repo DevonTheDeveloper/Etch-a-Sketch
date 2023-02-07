@@ -26,6 +26,10 @@ function generateStandardGrid() {
     gridSquare.style.width = `${560 / amountOfGridSquares}px`;
     gridSquare.style.height = `${560 / amountOfGridSquares}px`;
     grid.appendChild(gridSquare);
+
+    gridSquare.addEventListener("mouseenter", (event) => {
+      event.target.style.backgroundColor = "#000000";
+    });
   }
 }
 
@@ -39,6 +43,10 @@ createGrid16.addEventListener("click", function (e) {
     gridSquare.style.width = `${560 / amountOfGridSquares}px`;
     gridSquare.style.height = `${560 / amountOfGridSquares}px`;
     grid.appendChild(gridSquare);
+
+    gridSquare.addEventListener("mouseenter", (event) => {
+      event.target.style.backgroundColor = "#000000";
+    });
   }
 });
 
@@ -52,6 +60,10 @@ createGrid32.addEventListener("click", function (e) {
     gridSquare.style.width = `${560 / amountOfGridSquares}px`;
     gridSquare.style.height = `${560 / amountOfGridSquares}px`;
     grid.appendChild(gridSquare);
+
+    gridSquare.addEventListener("mouseenter", (event) => {
+      event.target.style.backgroundColor = "#000000";
+    });
   }
 });
 
@@ -64,7 +76,12 @@ createGrid64.addEventListener("click", function (e) {
     gridSquare.setAttribute("class", "grid-square");
     gridSquare.style.width = `${560 / amountOfGridSquares}px`;
     gridSquare.style.height = `${560 / amountOfGridSquares}px`;
+    gridSquare.style.outline = '0.5px solid black';
     grid.appendChild(gridSquare);
+
+    gridSquare.addEventListener("mouseenter", (event) => {
+      event.target.style.backgroundColor = "#000000";
+    });
   }
 });
 

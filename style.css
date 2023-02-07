@@ -1,8 +1,12 @@
+h1 {
+    text-align: center;
+}
+
 #grid-container {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    max-width: 960px;
+    max-width: 560px;
     max-height: auto;
     border: 2px solid black;
 }
@@ -11,8 +15,4 @@
 .grid-square {
     outline: 1px solid black;
     margin: 0px;
-}
-
-.grid-square:hover {
-    background: #457638;
 }

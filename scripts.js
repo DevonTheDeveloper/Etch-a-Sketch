@@ -8,11 +8,11 @@ const createGrid64 = document.createElement("button");
 const gridOutlineToggle = document.createElement("button");
 
 createGrid16.innerText = "16x16";
-createGrid16.classList.add("16x16-button");
+createGrid16.classList.add("grid-16x16");
 createGrid32.innerText = "32x32";
-createGrid32.classList.add("32x32-button");
+createGrid32.classList.add("grid-32x32");
 createGrid64.innerText = "64x64";
-createGrid64.classList.add("64x64-button");
+createGrid64.classList.add("grid-64x64");
 gridOutlineToggle.innerText = "No grid outline";
 gridOutlineToggle.classList.add("grid-outline-toggle");
 

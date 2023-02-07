@@ -1,18 +1,57 @@
+
+
+html {
+  background: rgb(248, 248, 248);
+  background-image: radial-gradient();
+}
+
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 #grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    max-width: 560px;
-    max-height: auto;
-    border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 560px;
+  max-height: auto;
+  border: 2px solid black;
+  background: rgb(255, 255, 255);
 }
-
 
 .grid-square {
-    outline: 1px solid black;
-    margin: 0px;
+  outline: 1px solid black;
+  margin: 0px;
 }
+
+.grid-16x16,
+.grid-32x32,
+.grid-64x64,
+.grid-outline-toggle {
+  padding: 1.4rem 1rem;
+  margin: 0.1rem;
+  border-radius: 8px;
+  border: none;
+  background: #1c4dde;
+  color: white;
+  cursor: pointer;
+  margin: 8px;
+  transition: 0.25s;
+}
+
+.grid-16x16:hover,
+.grid-32x32:hover,
+.grid-64x64:hover,
+.grid-outline-toggle:hover {
+  background: #17348b;
+  transform: scale(1.04);
+  border-radius: 0.2rem 1.2rem 0.2rem 1.2rem;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

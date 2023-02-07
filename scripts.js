@@ -1,10 +1,70 @@
-const grid = document.querySelector("#grid-container");
-const amountOfGridSquares = prompt(`How much squares do you want (0x0 ratio)`);
+const documentContainer = document.querySelector("#document-container");
+const grid = document.createElement("div");
+grid.setAttribute("id", "grid-container");
+const createGrid16 = document.createElement("button");
+const createGrid32 = document.createElement("button");
+const createGrid64 = document.createElement("button");
 
-for (let i = amountOfGridSquares * amountOfGridSquares; i > 0; i--) {
-  const gridSquare = document.createElement("div");
-  gridSquare.setAttribute("class", "grid-square");
-  gridSquare.style.width = `${960 / amountOfGridSquares}px`;
-  gridSquare.style.height = `${960 / amountOfGridSquares}px`;
-  grid.appendChild(gridSquare);
+createGrid16.innerText = "16x16 Grid";
+createGrid16.classList.add("16x16-button");
+createGrid32.innerText = "32x32 Grid";
+createGrid32.classList.add("32x32-button");
+createGrid64.innerText = "64x64 Grid";
+createGrid64.classList.add("64x64-button");
+
+documentContainer.appendChild(createGrid16);
+documentContainer.appendChild(createGrid32);
+documentContainer.appendChild(createGrid64);
+documentContainer.appendChild(grid);
+
+const gridButton16 = document.querySelector("class", "16x16-button");
+const gridButton32 = document.querySelector("class", "16x16-button");
+const gridButton64 = document.querySelector("class", "32x3-button");
+
+function generateStandardGrid() {
+  for (let i = 16 * 16; i > 0; i--) {
+    const amountOfGridSquares = 16;
+    const gridSquare = document.createElement("div");
+    gridSquare.setAttribute("class", "grid-square");
+    gridSquare.style.width = `${560 / amountOfGridSquares}px`;
+    gridSquare.style.height = `${560 / amountOfGridSquares}px`;
+    grid.appendChild(gridSquare);
+  }
 }
+createGrid16.addEventListener("click", function (e) {
+  for (let i = 16 * 16; i > 0; i--) {
+    const grid = document.querySelector("#grid-container");
+    const amountOfGridSquares = 16;
+    const gridSquare = document.createElement("div");
+    gridSquare.setAttribute("class", "grid-square");
+    gridSquare.style.width = `${560 / amountOfGridSquares}px`;
+    gridSquare.style.height = `${560 / amountOfGridSquares}px`;
+    grid.appendChild(gridSquare);
+  }
+});
+
+createGrid32.addEventListener("click", function (e) {
+  for (let i = 32 * 32; i > 0; i--) {
+    const grid = document.querySelector("#grid-container");
+    const amountOfGridSquares = 32;
+    const gridSquare = document.createElement("div");
+    gridSquare.setAttribute("class", "grid-square");
+    gridSquare.style.width = `${560 / amountOfGridSquares}px`;
+    gridSquare.style.height = `${560 / amountOfGridSquares}px`;
+    grid.appendChild(gridSquare);
+  }
+});
+
+createGrid64.addEventListener("click", function (e) {
+  for (let i = 64 * 64; i > 0; i--) {
+    const grid = document.querySelector("#grid-container");
+    const amountOfGridSquares = 64;
+    const gridSquare = document.createElement("div");
+    gridSquare.setAttribute("class", "grid-square");
+    gridSquare.style.width = `${560 / amountOfGridSquares}px`;
+    gridSquare.style.height = `${560 / amountOfGridSquares}px`;
+    grid.appendChild(gridSquare);
+  }
+});
+
+generateStandardGrid();

@@ -2,7 +2,7 @@ const documentContainer = document.querySelector("#document-container");
 const grid = document.createElement("div");
 grid.setAttribute("id", "grid-container");
 const gridSquare = document.createElement("div");
-const buttons = document.querySelector('#buttons')
+const buttons = document.querySelector("#buttons");
 const createGrid16 = document.createElement("button");
 const createGrid32 = document.createElement("button");
 const createGrid64 = document.createElement("button");
@@ -36,6 +36,10 @@ function generateStandardGrid() {
       event.target.style.backgroundColor = "#000000";
     });
 
+    gridSquare.addEventListener("click", (event) => {
+      event.target.style.backgroundColor = "#000000";
+    });
+
     gridOutlineToggle.addEventListener("click", () => {
       gridSquare.style.outline = "0px";
     });
@@ -56,6 +60,11 @@ createGrid16.addEventListener("click", function (e) {
     gridSquare.addEventListener("mouseenter", (event) => {
       event.target.style.backgroundColor = "#000000";
     });
+
+    gridSquare.addEventListener("click", (event) => {
+      event.target.style.backgroundColor = "#000000";
+    });
+
     gridOutlineToggle.addEventListener("click", () => {
       gridSquare.style.outline = "0px";
     });
@@ -76,6 +85,11 @@ createGrid32.addEventListener("click", function (e) {
     gridSquare.addEventListener("mouseenter", (event) => {
       event.target.style.backgroundColor = "#000000";
     });
+
+    gridSquare.addEventListener("click", (event) => {
+      event.target.style.backgroundColor = "#000000";
+    });
+
     gridOutlineToggle.addEventListener("click", () => {
       gridSquare.style.outline = "0px";
     });
@@ -97,6 +111,11 @@ createGrid64.addEventListener("click", function (e) {
     gridSquare.addEventListener("mouseenter", (event) => {
       event.target.style.backgroundColor = "#000000";
     });
+
+    gridSquare.addEventListener("click", (event) => {
+      event.target.style.backgroundColor = "#000000";
+    });
+
     gridOutlineToggle.addEventListener("click", () => {
       gridSquare.style.outline = "0px";
     });

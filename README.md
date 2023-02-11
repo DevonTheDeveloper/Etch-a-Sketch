@@ -28,6 +28,6 @@ For this project I only used three technologies:
 4. [x] Style the page, and make it sort of responsive.
 
 **Extras**
-1. [ ] Add mobile support (I’ll add this in the near future)
+1. [x] Add mobile support (I’ll add this in the near future)
 2. [ ] Add a color picker
 3. [ ] Add a rainbow mode
